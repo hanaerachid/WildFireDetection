@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wild Fire Detection App</title>
+</head>
+<body>
+    <h1>Wild Fire Detection App</h1>
+    <form action="/result" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".png" required><br><br>
+        <label for="forest_type">Select the type of forest:</label>
+        <select name="forest_type" id="forest_type" required>
+            <option value="Tropical Forest">Tropical Forest</option>
+            <option value="Temperate Forest">Temperate Forest</option>
+            <option value="Boreal Forest">Boreal Forest</option>
+            <option value="Shrublands">Shrublands</option>
+            <option value="Grasslands">Grasslands</option>
+        </select><br><br>
+        <label for="resolution">Enter the image resolution value:</label>
+        <input type="text" name="resolution" id="resolution" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

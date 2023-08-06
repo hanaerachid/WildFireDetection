@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <h2>The Predicted Probability is:</h2>
+    <img src="{{ image_path }}" width="500">
+    <h2>The Predicted Mask is:</h2>
+    <img src="{{ image_path }}" width="500">
+    <h2>CO2 Emission Calculator</h2>
+    <p>The total burnt area is: {{ area/1e6 }} km^2</p>
+    <p>The total CO2 emitted is: {{ biomass_burnt/1e6 }} tons</p>
+    <p>This is equivalent to: {{ equal_days }} days of California's daily electricity power emission</p>
+</body>
+</html>
